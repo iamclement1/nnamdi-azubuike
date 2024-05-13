@@ -10,8 +10,8 @@ const FeatureProject = () => {
       <h1>Featured Projects</h1>
       {
         ProjectData.map((project) => (
-          <Card key={project.id} className='bg-[#181810] text-[#6C6C6B] my-3'>
-            <Link href={project.uri} className="text-[#6C6C6B]">
+          <Link href={project.uri} key={project.id} className="text-[#6C6C6B]">
+            <Card className='bg-[#181810] text-[#6C6C6B] my-3'>
               <CardHeader>
                 <CardTitle>{project?.name}</CardTitle>
               </CardHeader>
@@ -21,8 +21,8 @@ const FeatureProject = () => {
               <CardFooter>
                 <Link href={project?.uri} className='underline text-sm'>{project?.action}</Link>
               </CardFooter>
-            </Link>
-          </Card>
+            </Card>
+          </Link>
         ))
       }
       <Button className='my-4 underline bg-[#181810] text-[#6C6C6B]'>

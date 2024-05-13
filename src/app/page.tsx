@@ -2,12 +2,11 @@ import FeatureProject from "@/components/ui/LandingPage/FeatureProject";
 import { PortfolioData } from "@/util/data";
 import Link from "next/link";
 
-
 export default function Home() {
   return (
     <main className="grid md:grid-cols-2 bg-black md:gap-4 md:p-0 p-6">
-      <div className="md:overflow-y-hidden  md:p-16">
-        <p className=" text-[#D3BD44] font-extrabold md:text-[50px] text-3xl leading-none ">
+      <div className="md:overflow-y-hidden md:p-16">
+        <p className="text-[#D3BD44] font-extrabold md:text-[50px] text-3xl leading-none ">
           Hi, I&apos;m Nnamdi.
         </p>
         <div className="flex md:gap-5 gap-2  md:text-sm text-[10px] text-gray-400 my-2">
@@ -30,16 +29,14 @@ export default function Home() {
                 </Link>
               </div>
             ))}
-
           </div>
         </div>
       </div>
-      <div className="md:h-screen w-5/6 md:overflow-y-auto md:pt-14 pt-6">
+      <div className="md:h-screen md:w-5/6 md:overflow-y-auto md:pt-14 pt-6">
         <FeatureProject />
         <FeatureProject />
         <FeatureProject />
         <FeatureProject />
-
       </div>
     </main>
   );
