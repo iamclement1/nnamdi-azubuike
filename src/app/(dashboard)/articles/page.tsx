@@ -1,7 +1,3 @@
-import React from 'react'
-
-export const page = () => {
-  return (
-    <div>articles page</div>
-  )
+export default function Page() {
+  return <p>Articles Page</p>
 }
