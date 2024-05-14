@@ -11,3 +11,9 @@ export type ProjectDataType = {
   action: string;
   uri: string;
 }
+
+export type NavLinks = {
+  id: number;
+  name: string;
+  href: string;
+}

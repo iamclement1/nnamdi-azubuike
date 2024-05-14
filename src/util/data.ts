@@ -1,4 +1,22 @@
-import { PortfolioItem, ProjectDataType } from "./definition";
+import { NavLinks, PortfolioItem, ProjectDataType } from "./definition";
+
+export const NavData: NavLinks[] = [
+  {
+    id: 1,
+    name: "Projects",
+    href: "/projects"
+  },
+  {
+    id: 2,
+    name: "Articles",
+    href: "/articles"
+  },
+  {
+    id: 3,
+    name: "Talks",
+    href: "/talks"
+  }
+]
 
 export const PortfolioData: PortfolioItem[] = [
   {
