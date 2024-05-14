@@ -7,7 +7,7 @@ import { Button } from '../button'
 
 const FeatureProject = () => {
   return (
-    <div className='text-[#6C6C6B]'>
+    <main className='text-[#6C6C6B]'>
       <h1>Featured Projects</h1>
       {
         ProjectData.map((project) => (
@@ -26,12 +26,12 @@ const FeatureProject = () => {
           </Link>
         ))
       }
-      <Button className='my-4 underline bg-[#181810] text-[#6C6C6B]'>
+      <Button className='my-4 underline bg-[#181810] text-[#D3BD44]'>
         <Link href={'/projects'}>
           View More Projects
         </Link>
       </Button>
-    </div>
+    </main>
   )
 }
 
