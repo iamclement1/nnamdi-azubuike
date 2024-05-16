@@ -1,3 +1,4 @@
+import Articles from "@/components/ui/LandingPage/Articles";
 import FeatureProject from "@/components/ui/LandingPage/FeatureProject";
 import { PortfolioData } from "@/util/data";
 import Link from "next/link";
@@ -34,9 +35,9 @@ export default function Home() {
       </div>
       <div className="md:h-screen md:w-5/6 md:overflow-y-auto md:pt-14 pt-6">
         <FeatureProject />
-        <FeatureProject />
-        <FeatureProject />
-        <FeatureProject />
+        <Articles />
+        {/* <FeatureProject />
+        <FeatureProject /> */}
       </div>
     </main>
   );
