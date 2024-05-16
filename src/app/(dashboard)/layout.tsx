@@ -6,6 +6,7 @@ import Footer from "@/components/common/footer";
 
 
 
+
 const roboto = Roboto_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
