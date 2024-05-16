@@ -17,3 +17,12 @@ export type NavLinks = {
   name: string;
   href: string;
 }
+
+export type ArticlesDataType = {
+  id: number;
+  date: string;
+  readTime: string;
+  title: string;
+  readMore: string;
+  uri: string;
+}

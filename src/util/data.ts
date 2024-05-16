@@ -1,4 +1,4 @@
-import { NavLinks, PortfolioItem, ProjectDataType } from "./definition";
+import { ArticlesDataType, NavLinks, PortfolioItem, ProjectDataType } from "./definition";
 
 export const NavData: NavLinks[] = [
   {
@@ -50,5 +50,32 @@ export const ProjectData: ProjectDataType[] = [
     desc: "Your No.1 Solution for hostel accommodation An innovating way to relieve you of the hassle of hostel- hunting.",
     action: "View Project",
     uri: "https://hostelpaddy.netlify.app/"
+  }
+]
+
+export const ArticlesData: ArticlesDataType[] = [
+  {
+    id: 1,
+    date: 'February, 22, 2023',
+    readTime: '10',
+    title: 'Version Control System -  Introduction to Git & GitHub for beginners',
+    readMore: 'Read Articles',
+    uri: 'https://iamclement.hashnode.dev/version-control-system-introduction-to-git-github-for-beginners'
+  },
+  {
+    id: 2,
+    date: 'February, 16, 2023',
+    readTime: '2',
+    title: 'Firebase Cloud Storage',
+    readMore: 'Read Articles',
+    uri: "https://iamclement.hashnode.dev/firebase-cloud-storage"
+  },
+  {
+    id: 3,
+    date: 'February, 14, 2023',
+    readTime: '3',
+    title: 'Firebase Authentication',
+    readMore: 'Read Articles',
+    uri: "https://iamclement.hashnode.dev/firebase-google-authentication-in-react"
   }
 ]
