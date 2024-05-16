@@ -1,4 +1,4 @@
-import { ArticlesDataType, NavLinks, PortfolioItem, ProjectDataType } from "./definition";
+import { ArticlesDataType, FooterItemType, NavLinks, PortfolioItem, ProjectDataType } from "./definition";
 
 export const NavData: NavLinks[] = [
   {
@@ -77,5 +77,45 @@ export const ArticlesData: ArticlesDataType[] = [
     title: 'Firebase Authentication',
     readMore: 'Read Articles',
     uri: "https://iamclement.hashnode.dev/firebase-google-authentication-in-react"
+  }
+]
+
+export const FooterData: FooterItemType[] = [
+  {
+    id: 1,
+    title: 'Where To Find Me',
+    github: 'GitHub',
+    githubUri: 'https://github.com/iamclement1',
+    linkedIn: 'LinkedIn',
+    linkedInUri: 'https://www.linkedin.com/in/clementnnamdi/',
+    twitter: 'Twitter',
+    twitterUri: 'https://twitter.com/_iamclement_',
+    email: 'Email',
+    emailUri: 'acu.nnamdi@gmail.com'
+  },
+  {
+    id: 2,
+    title: 'Communities',
+    gdgIlorin: 'GDG Ilorin',
+    gdgIlorinUri: 'https://gdg.community.dev/gdg-ilorin/',
+    gdgIbadan: 'GDG Ibadan',
+    gdgIbadanUri: 'https://gdg.community.dev/gdg-ibadan/',
+    kwarabuild: 'Kwarabuild',
+    kwarabuildUri: 'https://kwarabuild.com/',
+    africa: "Africa's Talking",
+    africaUri: "https://africastalking.com/"
+
+  },
+  {
+    id: 3,
+    title: 'Quick Links',
+    home: 'Home',
+    homeUri: '/',
+    projects: 'Projects',
+    projectsUri: '/projects',
+    articles: 'Articles',
+    articlesUri: '/articles',
+    talks: 'Talks',
+    talksUri: '/talks'
   }
 ]

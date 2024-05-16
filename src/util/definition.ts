@@ -26,3 +26,9 @@ export type ArticlesDataType = {
   readMore: string;
   uri: string;
 }
+
+export type FooterItemType = {
+  id: number;
+  title: string;
+  [key: string]: string | number | undefined; // Allow any string key with string or number value
+}
