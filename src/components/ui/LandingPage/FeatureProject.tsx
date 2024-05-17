@@ -1,5 +1,5 @@
 
-import { ProjectData } from '@/util/data'
+import { ProjectData } from '@/utils/data'
 import Link from 'next/link'
 import React from 'react'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../card'
