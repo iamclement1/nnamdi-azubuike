@@ -1,6 +1,6 @@
 import Articles from "@/components/ui/LandingPage/Articles";
 import FeatureProject from "@/components/ui/LandingPage/FeatureProject";
-import { PortfolioData } from "@/util/data";
+import { PortfolioData } from "@/utils/data";
 import Link from "next/link";
 
 export default function Home() {
