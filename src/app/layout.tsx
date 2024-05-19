@@ -1,8 +1,13 @@
+import React from "react";
 import type { Metadata } from "next";
 import { Roboto_Mono } from "next/font/google";
 import "./globals.css";
 
-const roboto = Roboto_Mono({ subsets: ["latin"], display: 'swap', adjustFontFallback: false });
+const roboto = Roboto_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  adjustFontFallback: false,
+});
 
 export const metadata: Metadata = {
   title: {
@@ -10,6 +15,7 @@ export const metadata: Metadata = {
     default: "Nnamdi Azubuike",
   },
   description: "Nnamdi Azubuike is a solution provider (software engineer)",
+  manifest: "/manifest.json",
   icons: [
     {
       rel: "icon",
