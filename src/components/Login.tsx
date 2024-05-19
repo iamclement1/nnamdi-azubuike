@@ -1,11 +1,12 @@
 import React from 'react'
-import { useForm } from 'react-hook-form';
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from './ui/form';
+import { Form, FormControl, FormField, FormItem, FormMessage } from './ui/form';
 import { Input } from './ui/input';
 import * as z from "zod";
-import { zodResolver } from '@hookform/resolvers/zod';
 import { Button } from './ui/button';
-import { registerWithEmailAndPasword } from '@/actions/supabase';
+import { useForm } from "react-hook-form"
+import { zodResolver } from "@hookform/resolvers/zod"
+import { registerWithEmailAndPassword } from '@/actions/supabase';
+
 
 
 const formSchema = z.object({
@@ -24,12 +25,11 @@ const Login = () => {
   });
 
   const handleSubmit = async (values: z.infer<typeof formSchema>) => {
-    const response = await registerWithEmailAndPasword(values)
+    const response = await registerWithEmailAndPassword(values)
 
     const { error, data } = JSON.parse(response)
     if (error) {
       console.warn("sign in erro", error)
-      return;
     }
 
   };
