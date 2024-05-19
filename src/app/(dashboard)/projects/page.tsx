@@ -1,5 +1,5 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { ProjectData } from "@/util/data";
+import { ProjectData } from "@/utils/data";
 import Link from "next/link";
 
 export default function Page() {
