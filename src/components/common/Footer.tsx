@@ -1,4 +1,4 @@
-import { FooterData } from '@/util/data';
+import { FooterData } from '@/utils/data';
 import Link from 'next/link';
 import React from 'react';
 

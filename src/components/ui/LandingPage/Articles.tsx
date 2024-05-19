@@ -1,4 +1,4 @@
-import { ArticlesData } from '@/util/data'
+import { ArticlesData } from '@/utils/data'
 import Link from 'next/link'
 import React from 'react'
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../card'

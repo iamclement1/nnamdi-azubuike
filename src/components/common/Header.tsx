@@ -1,5 +1,5 @@
 'use client'
-import { NavData } from '@/util/data'
+import { NavData } from '@/utils/data'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
