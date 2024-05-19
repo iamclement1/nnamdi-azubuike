@@ -1,5 +1,5 @@
-import { User } from '@/types/app';
+// import { User } from '@/types/app';
 
-const getUserData = async (): Promise<User | null> => {};
+// const getUserData = async (): Promise<User | null> => {};
 
-export default getUserData;
+// export default getUserData;
