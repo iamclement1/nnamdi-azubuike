@@ -1,22 +1,18 @@
-import React from 'react'
-import { Form, FormControl, FormField, FormItem, FormMessage } from './ui/form';
-import { Input } from './ui/input';
+import React from "react";
+import { Form, FormControl, FormField, FormItem, FormMessage } from "./ui/form";
+import { Input } from "./ui/input";
 import * as z from "zod";
-import { Button } from './ui/button';
-import { useForm } from "react-hook-form"
-import { zodResolver } from "@hookform/resolvers/zod"
-import { registerWithEmailAndPassword } from '@/actions/supabase';
-
-
+import { Button } from "./ui/button";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { registerWithEmailAndPassword } from "@/actions/supabase";
+import { createClient } from "@/utils/supabase/client";
 
 const formSchema = z.object({
-  email: z.string().email({ message: 'Invalid email address' }),
-})
-
+  email: z.string().email({ message: "Invalid email address" }),
+});
 
 const Login = () => {
-
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
@@ -25,18 +21,31 @@ const Login = () => {
   });
 
   const handleSubmit = async (values: z.infer<typeof formSchema>) => {
-    const response = await registerWithEmailAndPassword(values)
+    const response = await registerWithEmailAndPassword(values);
 
-    const { error, data } = JSON.parse(response)
+    const { error, data } = JSON.parse(response);
     if (error) {
-      console.warn("sign in erro", error)
+      console.warn("sign in error", error);
     }
 
+    console.log("sign in data", data);
   };
+
+  async function socialAuth() {
+    await createClient().auth.signInWithOAuth({
+      provider: "github",
+      options: {
+        redirectTo: `${location.origin}/auth/callback`,
+      },
+    });
+  }
+
   return (
-    <main className='border border-gray-700 rounded-md w-4/12 text-gray-300 p-4'>
-      <p className='my-2 mb-5 text-center'>Welcome Back</p>
-      <Button className='w-full mb-7'>Sign in with GitHub</Button>
+    <main className="border border-gray-700 rounded-md w-4/12 text-gray-300 p-4">
+      <p className="my-2 mb-5 text-center">Welcome Back</p>
+      <Button className="w-full mb-7" onClick={socialAuth}>
+        Sign in with GitHub
+      </Button>
 
       <Form {...form}>
         <form onSubmit={form.handleSubmit(handleSubmit)} className="space-y-8">
@@ -58,7 +67,7 @@ const Login = () => {
         </form>
       </Form>
     </main>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;
