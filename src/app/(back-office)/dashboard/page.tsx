@@ -1,5 +1,5 @@
-import { Dashboard } from "@/components/ui/back-office/Homepage";
 import React from "react";
+import { Dashboard } from "@/components/ui/back-office/Homepage";
 
 const page = () => {
   return <Dashboard />;

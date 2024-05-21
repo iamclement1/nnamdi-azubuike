@@ -1,3 +1,4 @@
+import { FolderRoot, Home, User2 } from "lucide-react";
 import {
   ArticlesDataType,
   FooterItemType,
@@ -5,6 +6,27 @@ import {
   PortfolioItem,
   ProjectDataType,
 } from "./definition";
+
+export const BackOfficeNavItem = [
+  {
+    id: 1,
+    href: "/dashboard",
+    icon: Home,
+    tooltip: "Dashboard",
+  },
+  {
+    id: 2,
+    href: "/dashboard/projects",
+    icon: FolderRoot,
+    tooltip: "Projects",
+  },
+  {
+    id: 3,
+    href: "/dashboard/profile",
+    icon: User2,
+    tooltip: "Profile",
+  },
+];
 
 export const NavData: NavLinks[] = [
   {
