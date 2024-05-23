@@ -39,11 +39,11 @@ export const NavData: NavLinks[] = [
     name: "Articles",
     href: "/articles",
   },
-  {
-    id: 3,
-    name: "Talks",
-    href: "/talks",
-  },
+  // {
+  //   id: 3,
+  //   name: "Talks",
+  //   href: "/talks",
+  // },
 ];
 
 export const PortfolioData: PortfolioItem[] = [
@@ -197,7 +197,7 @@ export const FooterData: FooterItemType[] = [
     projectsUri: "/projects",
     articles: "Articles",
     articlesUri: "/articles",
-    talks: "Talks",
-    talksUri: "/talks",
+    // talks: "Talks",
+    // talksUri: "/talks",
   },
 ];
