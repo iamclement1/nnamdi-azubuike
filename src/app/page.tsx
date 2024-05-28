@@ -1,3 +1,4 @@
+import React from "react";
 import Articles from "@/components/ui/LandingPage/Articles";
 import FeatureProject from "@/components/ui/LandingPage/FeatureProject";
 import { PortfolioData } from "@/utils/data";
@@ -16,16 +17,26 @@ export default function Home() {
           <p className="underline">Writer</p>
         </div>
         <p className="my-8 text-gray-400">
-          I&apos;m a proficient and forward-thinking software engineer, specializing in pioneering innovative products and solutions, particularly within the frontend ecosystem.
+          I&apos;m a proficient and forward-thinking software engineer,
+          specializing in pioneering innovative products and solutions,
+          particularly within the frontend ecosystem.
         </p>
         <p className="my-8 text-gray-400">
-          In addition to my technical expertise, I devote time to documenting my learning journey by researching and crafting articles on frontend technologies. You can find my insights shared on platforms such as Hashnode, as well as my experiences on Medium.
+          In addition to my technical expertise, I devote time to documenting my
+          learning journey by researching and crafting articles on frontend
+          technologies. You can find my insights shared on platforms such as
+          Hashnode, as well as my experiences on Medium.
         </p>
         <div>
           <div className="flex gap-6 text-gray-400 md:pt-12">
             {PortfolioData.map((portfolio) => (
               <div key={portfolio.id} className="">
-                <Link href={portfolio.uri} target="_blank" rel="noopener noreferrer" className="underline">
+                <Link
+                  href={portfolio.uri}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline"
+                >
                   {portfolio.name}
                 </Link>
               </div>
@@ -33,7 +44,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="md:h-screen md:w-5/6 md:overflow-y-auto md:pt-14 pt-6">
+      <div className="md:h-screen md:w-5/6 md:overflow-y-auto no-scrollbar scrollBar md:pt-14 pt-6">
         <FeatureProject />
         <Articles />
         {/* <FeatureProject />
